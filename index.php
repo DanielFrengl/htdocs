@@ -18,7 +18,7 @@
  *
  * Můžete ho upravovat a používat jak chcete, musíte však zmínit
  * odkaz na http://www.itnetwork.cz
- */
+ *//
 
 // Nastavení interního kódování pro funkce pro práci s řetězci
 mb_internal_encoding("UTF-8");
