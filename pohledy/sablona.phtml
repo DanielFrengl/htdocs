@@ -1,0 +1,45 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kapela Zatím Anna</title>
+        <base href="/localhost" />
+        <title><?= $titulek ?></title>
+        <meta name="description" content="<?= $popis ?>" />
+        <meta name="keywords" content="<?= $klicova_slova ?>" />
+        <link rel="stylesheet" href="/sablona.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+    <main>
+
+        <div class="logoheader">
+            <img src="images/logozatimanna.png">
+        </div>
+
+
+        <nav>
+            <ul>
+                <li><a class="navlinksa" href="clanek/uvod">Úvod</a></li>
+                <li><a class="navlinksa" href="obsazeni">Obsazení</a></li>
+                <li><a class="navlinksa" href="repertoar">Repertoár</a></li>
+                <li><a class="navlinksa" href="kalendarakci">Kalendář akcí</a></li>
+                <li><a class="navlinksa" href="fotogalerie">Fotogalerie</a></li>
+                <li><a class="navlinksa" href="proporadatele">Pro pořadatele</a></li>
+            </ul>
+        </nav>
+
+
+        <article>
+            <?php $this->kontroler->vypisPohled(); // vložení aktuálního pohledu do šablony ?>
+        </article>
+
+    </main>
+    </body>
+    </html>
